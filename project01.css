@@ -3,6 +3,21 @@
     padding: 0;
     list-style: none;
 }
+h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* ----------------------------------------- */
+
 .nav-wrap{
     width: 100%;
 }
@@ -24,6 +39,9 @@
     padding: 10px;
     color: #888;
 }
+
+/* --------------------------------------- */
+
 .head-wrap{
     width: 100%;
     position: relative;
@@ -55,4 +73,77 @@
 .head-wrap p{
     letter-spacing: 20px;
     color: #fff;
+}
+
+/* ------------------------------------ */
+
+.page-text-1{
+    width: 100%;
+    margin: 100px 0;
+}
+.page-text-1 .txt{
+    text-align: center;
+    padding: 30px 0;
+}
+.page-text-1 .pic{
+    width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.page-text-1 .pic div{
+    width: 600px;
+    height: 150px;
+    margin: 30px;
+    color: #fff;
+    background-size: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-text-1 .pic h3{
+    margin-bottom: 10px;
+}
+.page-text-1 .pic-1{
+    background: url("https://picsum.photos/600/150?random=13") no-repeat;
+}
+.page-text-1 .pic-2{
+    background: url("https://picsum.photos/600/150?random=14") no-repeat;
+}
+
+/* ------------------------------------ */
+
+.page-text-2{
+    width: 100%;
+    position: relative;
+}
+.page-text-2 img{
+    width: 100%;
+    vertical-align: top;
+}
+.page-text-2 .txt{
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+}
+.page-text-2 p{
+    line-height: 1.5em;
+}
+.page-text-2 a{
+    text-decoration: none;
+    border: solid 1px #fff;
+    padding: 10px;
+    margin-top: 100px;
+    color: #fff;
+}
+.page-text-2 li{
+    margin-top: 100px;
 }
