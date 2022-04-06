@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+    /* list-style: none; */
 }
 h2{
     font-size: 50px;
@@ -74,6 +74,9 @@ p{
     letter-spacing: 20px;
     color: #fff;
 }
+.head-wrap p+p{
+    margin-top: 350px;
+}
 
 /* ------------------------------------ */
 
@@ -144,7 +147,7 @@ p{
     margin-top: 100px;
     color: #fff;
 }
-.page-text-2 li{
+.page-text-2 #VIEW-MORE{
     margin-top: 100px;
 }
 
@@ -200,11 +203,69 @@ p{
 
 .footer{
     width: 100%;
-    padding: 10% 20%;
-    background-color: #888;
+    background-color: #333;
+    margin-top: 50px;
 }
-.footer{}
-.footer{}
-.footer{}
-.footer{}
-.footer{}
+.footer .container{
+    width: 1200px;
+    margin: auto;
+    padding: 80px 0;
+}
+.footer .logo{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer .logo img{
+    border-radius: 100%;
+    margin-right: 5px;
+}
+.footer .logo h2{
+    color: #fff;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+.footer .cake{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer li , .footer a{
+    margin-bottom: 20px;
+    color: #999;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+.footer .search h3{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.footer .search input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    margin-bottom: 10px;
+}
+.footer .search button{
+    padding: 10px;
+    background-color: #c00;
+    color: #fff;
+    margin-left: -5px;
+    border-radius: 0 8px 8px 0;
+}
+.footer .icon{
+    display: flex;
+}
+.footer .icon div{
+    margin-right: 50px;
+}
+.footer .copyright{
+    margin-top: 50px;
+    color: #999;
+
+}
+.footer .copyright span{
+    color: #c00;
+}
