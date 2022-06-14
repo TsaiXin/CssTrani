@@ -1,0 +1,186 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: rgb(215, 216, 181);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+/* 把預設的滾軸隱藏 */
+::-webkit-scrollbar{
+    display: none;
+}
+.title{
+    padding: 2em;
+    text-align: center;
+}
+.title h2{
+    color: rgb(163, 64, 64);
+    padding: .5em o 5px ;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: .3em;
+} 
+
+.title p{
+    color: rgb(156, 105, 105);
+    font-size: 28px;
+    font-weight: 300;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input input{
+    border: none;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 8px ;
+}
+.classIfiction-btn{}
+.btn:hover{
+    color: #fff;
+    background-color: #888;
+    transition: .2s;
+    box-shadow: 1px 1px 2px #888;
+}
+.btn{
+    padding: 10px;
+    margin: 15px 10px;
+    border: none;
+    color: #888;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.classIfiction-list{
+    /* min-width: 960px; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.list{
+    flex: 1;
+    margin: 0 10px 50px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    height: 65vh;
+    background-color: rgb(252, 252, 252);
+    transition: .4s;
+    overflow-x: hidden;
+ }
+.list:hover{
+    flex: 4;
+    transition: .4s;
+}
+.list-titile{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 5px;
+}
+/* 新增進list 裡的樣式 */
+.list-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    transform: scale(1);
+    animation: scaleUp .5s forwards;
+}
+.list-text .time{
+    font-size: 18px;
+    color: #aaa;
+    margin-right: 5px;
+}
+.list-text .text{
+    flex: 5;
+    line-height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(80, 78, 78);
+    padding: 0 5px;
+}
+.list:hover .list-text .text{
+    word-wrap: break-word;
+}
+@keyframes scaleUp{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+@keyframes scaleDown{
+    0%{transform: scale(1);}
+    100%{transform: scale(0);}
+}
+/* 點選垃圾桶要顯示的動畫 */
+.scaleDown{
+    animation: scaleDown .5s forwards;
+}
+.check, .trash{
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+.fa-trash, .fa-check{
+    font-size: 28px;
+}
+.fa-check{
+    color: rgb(89, 144, 247);
+    margin-right: 5px;
+    padding: 0 5px;
+    border-right: 3px solid #aaa;
+}
+.fa-trash{
+    color: rgb(88, 34, 34);
+}
+/* 點選勾勾要顯示的樣式 */
+.none{
+    text-decoration: line-through;
+    opacity: .5;
+    transition: all .5s;
+}
+.abc{
+    width: 90%;
+    border: 1px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: initial;
+
+}
+.abc .a{
+    background-color: #faa;
+    width: 110%;
+}
+.abc .b{
+    background-color: #faf;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.abc .c{
+    background-color: #aff;
+    width: 50%
+    ;
+}
+
+@media (max-width:420px) {
+    .input input {
+        width: 90%;
+    }
+    .classIfiction-list{
+        flex-direction: column;
+        width: 90%;
+    }
+    .list{
+        width: 90%;
+    }
+}
